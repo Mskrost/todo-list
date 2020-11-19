@@ -3,6 +3,6 @@ $("button").click(() => {
     $("ul").append(`<li>${todo}</li>`);
 });
         
-$('ul').on('click', 'li', function() {
-    $(this).toggleClass('line-through');
+$('ul').on('click', 'li', (event) => {
+    $(event.target).toggleClass('line-through');
 });
