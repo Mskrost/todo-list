@@ -1,3 +1,45 @@
 .line-through {
-    text-decoration: line-through;
-  }
+  text-decoration: line-through;
+}
+
+.did {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+.done, .remove {
+  float: right;
+  cursor: pointer;
+}
+
+.center {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 500px;
+  border: 1px solid black;
+}
+
+ul {
+  width: 300px;
+  list-style-type: none;
+}
+
+li {
+  width: 236px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-left: -40px;
+  margin-top: 2px;
+  padding: 3px 5px 0px 5px;
+}
