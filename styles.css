@@ -1,45 +1,86 @@
 .line-through {
-  text-decoration: line-through;
+	text-decoration: line-through;
+	opacity: 0.2;
 }
 
 .did {
-  background: black;
-  color: white;
-  text-decoration: none;
+	background: gray;
+	color: white;
+	text-decoration: none;
 }
 
 .done, .remove {
-  float: right;
-  cursor: pointer;
-}
-
-.center {
-  margin: auto;
+	width: 23px;
+	height: 23px;
+	float: right;
+	cursor: pointer;
+	margin-top: 5px;
 }
 
 .flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.font {
+	font-family: Quicksand;
+}
+
+#todo-input {
+	width: 280px;
+	height: 40px;
+	font-size: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 3px;
+}
+
+#add-button {
+	height: 46px;
+	font-size: 34px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+	background: #e8e8e8;
 }
 
 main {
-  width: 500px;
-  border: 1px solid black;
+	width: 500px;
+	
+	margin-top: 50px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: white;
+	padding-bottom: 35px;
+}
+
+h1 {
+	font-size: 50px;
+	color: white;
+  	text-shadow: 2px 2px 4px #000000;
+}
+
+section {
+	display: flex;
 }
 
 ul {
-  width: 300px;
-  list-style-type: none;
+	list-style-type: none;
 }
 
 li {
-  width: 236px;
-  height: 25px;
-  border: 1px solid black;
-  border-radius: 3px;
-  margin-left: -40px;
-  margin-top: 2px;
-  padding: 3px 5px 0px 5px;
+	width: 355px;
+	height: 30px;
+	border-radius: 3px;
+	margin-left: -40px;
+	margin-top: 5px;
+	padding: 0px 5px 3px 5px;
+	font-size: 24px;
+	transition-duration: 0.5s;
+}
+
+li:hover {
+	background: #e8e8e8;
 }
