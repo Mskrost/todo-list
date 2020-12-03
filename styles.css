@@ -1,20 +1,16 @@
 .line-through {
 	text-decoration: line-through;
-	opacity: 0.2;
+	opacity: 0.5;
 }
 
-.did {
-	background: gray;
-	color: white;
-	text-decoration: none;
-}
-
-.done, .remove {
-	width: 23px;
-	height: 23px;
+#done, #remove {
 	float: right;
 	cursor: pointer;
-	margin-top: 5px;
+	margin-top: 3px;
+	border-radius: 3px;
+	color: #F6AF66;
+	color: white;
+	transition-duration: 0.5s;
 }
 
 .flex {
@@ -31,15 +27,24 @@
 #todo-input {
 	width: 280px;
 	height: 40px;
-	font-size: 30px;
+	font-size: 16px;
+	padding-left: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 3px;
+	border: none;
+	margin-right: 2px;
 }
 
 #add-button {
-	height: 46px;
-	font-size: 34px;
+	height: 42px;
+	width: 75px;
+	font-size: 16px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 3px;
+	background: #F6AF66;
+	color: white;
+	transition-duration: 0.5s;
+	border: 1px solid white;
 }
 
 body {
@@ -48,11 +53,10 @@ body {
 
 main {
 	width: 500px;
-	
 	margin-top: 50px;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background: white;
+	background: #F6AF66;
 	padding-bottom: 35px;
 }
 
@@ -72,15 +76,27 @@ ul {
 
 li {
 	width: 355px;
-	height: 30px;
+	height: min 30px;
 	border-radius: 3px;
 	margin-left: -40px;
 	margin-top: 5px;
-	padding: 0px 5px 3px 5px;
-	font-size: 24px;
+	padding: 3px 5px 5px 10px;
+	font-size: 20px;
 	transition-duration: 0.5s;
+	color: white;
+	background: rgba(155,255,255,0.1);
 }
 
 li:hover {
-	background: #e8e8e8;
+	background: rgba(155,255,255,0.2);
+}
+
+button:hover {
+	background: rgba(155,255,255,0.1);
+	cursor: pointer;
+}
+
+#add-button:hover {
+	background: rgba(155,255,255,0.1);
+	cursor: pointer;
 }
